@@ -1,0 +1,47 @@
+{
+  "name": "@labshare/semantic-release-config",
+  "version": "0.0.0-development",
+  "description": "Shared semantic-release configuration for LabShare Github projects",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "travis-deploy-once": "travis-deploy-once --pro",
+    "semantic-release": "semantic-release",
+    "commitmsg": "commitlint -E GIT_PARAMS"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/LabShare/semantic-release-config.git"
+  },
+  "keywords": [
+    "semantic-release",
+    "semver",
+    "LabShare"
+  ],
+  "author": "https://github.com/LabShare/semantic-release-config/contributors",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/LabShare/semantic-release-config/issues"
+  },
+  "homepage": "https://github.com/LabShare/semantic-release-config#readme",
+  "peerDependencies": {
+    "semantic-release": ">=15.0.0 <16.0.0"
+  },
+  "dependencies": {
+    "@semantic-release/changelog": "^2.0.2",
+    "@semantic-release/git": "^5.0.0"
+  },
+  "release": {
+    "extends": "./index.js"
+  },
+  "publishConfig": {
+    "access": "restricted"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^7.0.0",
+    "@commitlint/config-conventional": "^7.0.1",
+    "husky": "^0.14.3",
+    "semantic-release": "^15.5.1",
+    "travis-deploy-once": "^5.0.0"
+  }
+}
