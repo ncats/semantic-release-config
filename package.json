@@ -1,6 +1,6 @@
 {
   "name": "@labshare/semantic-release-config",
-  "version": "0.0.0-development",
+  "version": "1.0.0",
   "description": "Shared semantic-release configuration for LabShare Github projects",
   "main": "index.js",
   "scripts": {
