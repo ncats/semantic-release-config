@@ -5,6 +5,7 @@ cache:
 notifications:
   email: false
 node_js:
+  - 8.11.2
   - '9'
 script:
   - npm install
@@ -12,4 +13,4 @@ after_success:
   - npm run travis-deploy-once "npm run semantic-release"
 branches:
   except:
-    - /^v\d+\.\d+\.\d+$/
+    - /^\d+\.\d+\.\d+$/
