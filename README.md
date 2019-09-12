@@ -21,8 +21,8 @@ Defined in `index.js` file, loaded by default when requiring `@labshare/semantic
 }
 ```
 
-## Lib:
-Defined in `lib.js` file, specific for Angular Libraries. Loaded by default when requiring `@labshare/semantic-release-config/lib` and adapted for the following requirements:
+## Angular Lib:
+Defined in `angular-lib.js` file, specific for Angular Libraries. Loaded by default when requiring `@labshare/semantic-release-config/angular-lib` and adapted for the following requirements:
 
 * Angular Libraries are built with [NgPackagr](https://www.npmjs.com/package/ng-packagr). During `build` step (`npm run build:lib`), NgPackagr will create a new folder for the bundled package (`/dist`, by default). This happens because:
   * Several bundle types will be compiled - FESM2015, FESM5, UMD, Minified UMD bundle, etc.
@@ -48,7 +48,7 @@ In your Angular Library repository:
   * Add to your [semantic-release config](https://github.com/semantic-release/semantic-release/blob/master/docs/usage/configuration.md) file: 
 ```
 {
-  "extends": "@labshare/semantic-release-config/lib"
+  "extends": "@labshare/semantic-release-config/angular-lib"
 }
 ```
   * Setup your Travis.yml release to call the release script contained in this repository. E.g.:
