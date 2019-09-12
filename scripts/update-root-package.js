@@ -28,17 +28,16 @@ console.log('Updating root package.json version');
 rootPackage.version = nestedPackage.version;
 
 /* Serialize root package object, then save it back in package.json */
-fs.writeFile(
-  path.join(travisDir, './package.json'),
-  JSON.stringify(rootPackage, null, 2),
-  function(err) {
-    if (err) {
-      console.log(err);
-      return;
-    }
-    console.log('Version updated successfully');
-  },
-);
+try {
+  fs.writeFileSync(
+    path.join(travisDir, './package.json'),
+    JSON.stringify(rootPackage, null, 2)
+  );
+  console.log('Version updated successfully');
+} catch(err) {
+  /* Semantic-release exec plugin will catch error and fail publish */
+  throw err;
+}
 
 /* Open Root Package Lock, we already have latest version from nested package.json */
 const rootPackageLock = require(path.join(travisDir, './package-lock.json'));
@@ -48,14 +47,13 @@ console.log('Updating root package-lock.json version');
 rootPackageLock.version = nestedPackage.version;
 
 /* Serialize lock object and save it back in package-lock.json */
-fs.writeFile(
-  path.join(travisDir, './package-lock.json'),
-  JSON.stringify(rootPackageLock, null, 2),
-  function(err) {
-    if (err) {
-      console.log(err);
-      return;
-    }
-    console.log('Version updated successfully');
-  },
-);
+try {
+  fs.writeFileSync(
+    path.join(travisDir, './package-lock.json'),
+    JSON.stringify(rootPackageLock, null, 2)
+  );
+  console.log('Version updated successfully');  
+} catch(err) {
+  /* Semantic-release exec plugin will catch error and fail publish */
+  throw err;
+}
