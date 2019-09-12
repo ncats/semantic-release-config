@@ -1,3 +1,6 @@
+const path = require('path');
+const rootPackageScriptLocation = path.resolve('./scripts/update-root-package.js')
+
 module.exports = {
     "plugins": [
         "@semantic-release/commit-analyzer",
@@ -12,7 +15,7 @@ module.exports = {
         [
             "@semantic-release/exec",
             {
-                "prepareCmd": "node ./scripts/update-root-package.js"
+                "prepareCmd": `node ${rootPackageScriptLocation}`
             }
         ],
         "@semantic-release/git",
