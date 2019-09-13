@@ -2,7 +2,8 @@ language: node_js
 notifications:
   email: false
 node_js:
-  - '9'
+  - lts/*
+  - node
 script:
   - npm ci
 after_success:
