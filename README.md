@@ -67,3 +67,7 @@ jobs:
         script:
           - npm run semantic-release
 ```
+
+  * Make sure you have configured Travis CI Environment [Tokens for Semantic-Release](https://github.com/semantic-release/semantic-release/blob/master/docs/usage/ci-configuration.md#authentication) correctly.
+    * `NPM_TOKEN` owner should have publish permission on NPM groups.
+    * `GH_TOKEN` owner should have push permission for the Git Repository.
