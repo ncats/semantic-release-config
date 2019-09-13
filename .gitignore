@@ -8,8 +8,5 @@
 *.iml
 *.iws
 
-# NPM
-package-lock.json
-
 # Node
 node_modules
