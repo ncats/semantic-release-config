@@ -51,7 +51,7 @@ In your Angular Library repository:
   "extends": "@labshare/semantic-release-config/angular-lib"
 }
 ```
-  * Setup your Travis.yml release to call the release script contained in this repository. E.g.:
+  * Setup your Travis.yml to call build and semantic-release scripts during release step. E.g.:
 
 ```yml
 jobs:
@@ -59,10 +59,11 @@ jobs:
     - stage: release
       if: branch = master
       node_js: lts/*
-      script: skip
+      script:
+        - npm run build:lib
       deploy:
         provider: script
         skip_cleanup: true
         script:
-          - bash node_modules/@labshare/semantic-release-config/scripts/release.sh
+          - npm run semantic-release
 ```
