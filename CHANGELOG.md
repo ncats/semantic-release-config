@@ -1,3 +1,10 @@
+## [1.1.1](https://github.com/LabShare/semantic-release-config/compare/v1.1.0...v1.1.1) (2019-09-18)
+
+
+### Bug Fixes
+
+* resolve path from script dir ([274e0d6](https://github.com/LabShare/semantic-release-config/commit/274e0d6))
+
 # [1.1.0](https://github.com/LabShare/semantic-release-config/compare/v1.0.0...v1.1.0) (2019-09-13)
 
 
