@@ -4,7 +4,7 @@ const path = require('path');
 
 /* We will pass this value in a shell call below, 
 so we should make the path absolute to avoid inconsistencies */
-const rootPackageScriptLocation = path.resolve('./scripts/update-root-package.js')
+const rootPackageScriptLocation = path.resolve(__dirname, './scripts/update-root-package.js');
 
 module.exports = {
     "plugins": [
