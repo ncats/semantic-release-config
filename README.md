@@ -1,7 +1,7 @@
 # semantic-release-config
 
 [![Build Status](https://travis-ci.com/LabShare/semantic-release-config.svg?token=zsifsALL6Np5avzzjVp1&branch=master)](https://travis-ci.com/LabShare/semantic-release-config)
-[![semantic-release](https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-semantic--release-e10079.svg)](https://github.com/semantic-release/semantic-release)
+[![semantic-release](https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-semantic--release-e10079.svg)](https://github.com/semantic-release/semantic-release) [![Greenkeeper badge](https://badges.greenkeeper.io/LabShare/semantic-release-config.svg?token=d9ec5c8b510131fffcce6535b92d2d7e525f08d3dfb80d62a9ff009887c2951b&ts=1578614157988)](https://greenkeeper.io/)
 
 Shared configuration for Semantic Release. 
 Details: [shared-config](https://github.com/semantic-release/semantic-release/blob/caribou/docs/usage/shareable-configurations.md).
