@@ -28,12 +28,12 @@
     "semantic-release": ">=15.0.0 <16.0.0"
   },
   "dependencies": {
-    "@semantic-release/changelog": "^2.1.2",
-    "@semantic-release/commit-analyzer": "^6.3.0",
-    "@semantic-release/exec": "^3.3.6",
-    "@semantic-release/git": "^5.0.0",
-    "@semantic-release/github": "^5.4.3",
-    "@semantic-release/npm": "^5.1.15",
+    "@semantic-release/changelog": "^3.0.6",
+    "@semantic-release/commit-analyzer": "^7.0.0",
+    "@semantic-release/exec": "^4.0.0",
+    "@semantic-release/git": "^8.0.0",
+    "@semantic-release/github": "^6.0.0",
+    "@semantic-release/npm": "^6.0.0",
     "@semantic-release/release-notes-generator": "^7.3.0"
   },
   "release": {
@@ -43,10 +43,10 @@
     "access": "restricted"
   },
   "devDependencies": {
-    "@commitlint/cli": "^7.0.0",
-    "@commitlint/config-conventional": "^7.0.1",
-    "husky": "^0.14.3",
-    "semantic-release": "^15.5.1",
+    "@commitlint/cli": "^8.3.4",
+    "@commitlint/config-conventional": "^8.3.4",
+    "husky": "^4.0.4",
+    "semantic-release": "^16.0.0",
     "travis-deploy-once": "^5.0.0"
   }
 }
