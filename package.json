@@ -4,10 +4,12 @@
   "description": "Shared semantic-release configuration for LabShare Github projects",
   "main": "index.js",
   "scripts": {
-    "test": "snyk test",
+    "test": "echo \"Error: no test specified\" && exit 1",
     "travis-deploy-once": "travis-deploy-once --pro",
     "semantic-release": "semantic-release",
-    "commitmsg": "commitlint -E GIT_PARAMS"
+    "commitmsg": "commitlint -E GIT_PARAMS",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "repository": {
     "type": "git",
@@ -44,7 +46,8 @@
     "@commitlint/config-conventional": "^7.0.1",
     "husky": "^0.14.3",
     "semantic-release": "^15.5.1",
-    "snyk": "^1.305.0",
-    "travis-deploy-once": "^5.0.0"
-  }
+    "travis-deploy-once": "^5.0.0",
+    "snyk": "^1.305.0"
+  },
+  "snyk": true
 }
