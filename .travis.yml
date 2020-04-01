@@ -5,7 +5,7 @@ node_js:
   - lts/*
   - node
 script:
-  - npm ci
+  - npm install
 branches:
   except:
     - /^v\d+\.\d+\.\d+$/
