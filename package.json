@@ -8,8 +8,7 @@
     "travis-deploy-once": "travis-deploy-once --pro",
     "semantic-release": "semantic-release",
     "commitmsg": "commitlint -E GIT_PARAMS",
-    "snyk-protect": "snyk protect",
-    "prepublish": "npm run snyk-protect"
+    "snyk-protect": "snyk protect"
   },
   "repository": {
     "type": "git",
