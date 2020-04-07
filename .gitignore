@@ -10,3 +10,6 @@
 
 # Node
 node_modules
+
+#Dependency directories
+package-lock.json
