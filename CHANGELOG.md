@@ -1,3 +1,15 @@
+## [1.1.3](https://github.com/LabShare/semantic-release-config/compare/v1.1.2...v1.1.3) (2020-04-07)
+
+
+### Bug Fixes
+
+* remove snyk prepublish ([cecebed](https://github.com/LabShare/semantic-release-config/commit/cecebeda54751cf15b6611df567d020130547751))
+* update for snyk ([45fabff](https://github.com/LabShare/semantic-release-config/commit/45fabff45bac3bca0f295c76d479ddbf0ab1c1e9))
+* update package ([abc5ee7](https://github.com/LabShare/semantic-release-config/commit/abc5ee7be8a86f4e677738b2153310754a31d02b))
+* update package ([2f05155](https://github.com/LabShare/semantic-release-config/commit/2f05155782b963ad493638a56a0a0c824a401929))
+* update snyk dependencies ([7a9bdf3](https://github.com/LabShare/semantic-release-config/commit/7a9bdf3b2e1609ebd421720a272cba46ecaef93f))
+* update snyk test ([36f1d9a](https://github.com/LabShare/semantic-release-config/commit/36f1d9a7dcd4c79948c8db80c9ac0607bfa5b739))
+
 ## [1.1.2](https://github.com/LabShare/semantic-release-config/compare/v1.1.1...v1.1.2) (2020-02-19)
 
 
