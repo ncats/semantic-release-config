@@ -35,7 +35,8 @@
     "@semantic-release/git": "^5.0.0",
     "@semantic-release/github": "^5.4.3",
     "@semantic-release/npm": "^5.1.15",
-    "@semantic-release/release-notes-generator": "^7.3.0"
+    "@semantic-release/release-notes-generator": "^7.3.0",
+    "snyk": "^1.316.1"
   },
   "release": {
     "extends": "./index.js"
@@ -45,8 +46,7 @@
     "@commitlint/config-conventional": "^7.0.1",
     "husky": "^0.14.3",
     "semantic-release": "^15.5.1",
-    "travis-deploy-once": "^5.0.0",
-    "snyk": "^1.305.0"
+    "travis-deploy-once": "^5.0.0"
   },
   "snyk": true
 }
