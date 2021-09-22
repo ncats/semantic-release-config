@@ -1,3 +1,14 @@
+## [1.1.4](https://github.com/LabShare/semantic-release-config/compare/v1.1.3...v1.1.4) (2021-09-22)
+
+
+### Bug Fixes
+
+* **release:** add package-lock ([b6fc426](https://github.com/LabShare/semantic-release-config/commit/b6fc42697882a511c0261ac26053cc573aa2778e))
+* package.json & .snyk to reduce vulnerabilities ([4175257](https://github.com/LabShare/semantic-release-config/commit/41752572d89f4aae643226d19e265f3b3bb58c19))
+* package.json & .snyk to reduce vulnerabilities ([4735d39](https://github.com/LabShare/semantic-release-config/commit/4735d3911aac0dbc7b37b17e9d807d740a6f57dc))
+* package.json to reduce vulnerabilities ([ba8cabe](https://github.com/LabShare/semantic-release-config/commit/ba8cabef3b070acc295db4e9d58367a4cb33e69a))
+* package.json to reduce vulnerabilities ([51e7428](https://github.com/LabShare/semantic-release-config/commit/51e742811dcf018cabc899354c647d5c01c2a6b3))
+
 ## [1.1.3](https://github.com/LabShare/semantic-release-config/compare/v1.1.2...v1.1.3) (2020-04-07)
 
 
