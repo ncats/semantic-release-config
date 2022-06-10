@@ -34,7 +34,7 @@
     "@semantic-release/exec": "^3.3.6",
     "@semantic-release/git": "^7.0.10",
     "@semantic-release/github": "^5.4.3",
-    "@semantic-release/npm": "^7.1.0",
+    "@semantic-release/npm": "^5.1.15",
     "@semantic-release/release-notes-generator": "^7.3.0",
     "snyk": "^1.722.0"
   },
