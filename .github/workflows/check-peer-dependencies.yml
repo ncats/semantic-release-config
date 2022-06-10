@@ -1,11 +1,9 @@
-name: Release
-on:
-  push:
-    branches:
-      - master
+name: Lint
+on: [pull_request]
+
 jobs:
-  release:
-    name: Release
+  lint:
+    name: Check Peer Dependencies
     runs-on: ubuntu-18.04
     steps:
       - name: Checkout
@@ -22,13 +20,6 @@ jobs:
         with:
           fail-fast: true
 
-      - name: Configure CI Github User
-        run: |
-          git config --global user.name 'LabShare'
-          git config --global user.email 'LabShare@labshare.org'
-        env:
-          GH_TOKEN: ${{ secrets.GH_TOKEN }}
-
       - name: Setup Node.js
         # This step generates a local .npmrc file and adds the registry URL + :_authToken=${NODE_AUTH_TOKEN}
         # if the "registry-url" option is set. See: https://github.com/actions/setup-node/blob/c46424eee26de4078d34105d3de3cc4992202b1e/src/main.ts#L44
@@ -42,8 +33,5 @@ jobs:
       - name: Install dependencies
         run: npm ci --ignore-scripts
 
-      - name: Release
-        env:
-          GH_TOKEN: ${{ secrets.GH_TOKEN }}
-          NODE_AUTH_TOKEN: ${{ secrets.NPM_PUBLISH_TOKEN }}
-        run: npx semantic-release
+      - name: Lint Peer Dependencies
+        run: npx check-peer-dependencies
