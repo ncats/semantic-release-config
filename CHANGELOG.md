@@ -1,3 +1,12 @@
+## [1.1.5](https://github.com/LabShare/semantic-release-config/compare/v1.1.4...v1.1.5) (2022-06-10)
+
+
+### Bug Fixes
+
+* **pkg:** resolve peer dependency conflicts ([d4545b4](https://github.com/LabShare/semantic-release-config/commit/d4545b4752d2b2bceea7281d74f3edccb12c4f55))
+* **pkg:** revert @semantic-release/npm upgrade which is not compatible with semantic release v15 ([8860e6a](https://github.com/LabShare/semantic-release-config/commit/8860e6a804602d6d76f1fcf2f4c0c2427eff1e8f)), closes [#29](https://github.com/LabShare/semantic-release-config/issues/29)
+* upgrade snyk from 1.720.0 to 1.722.0 ([8623706](https://github.com/LabShare/semantic-release-config/commit/8623706b5ae6a9589a60fef418ad3dcb0f2257d9))
+
 ## [1.1.4](https://github.com/LabShare/semantic-release-config/compare/v1.1.3...v1.1.4) (2021-09-22)
 
 
