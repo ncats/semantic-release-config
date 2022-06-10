@@ -3,3 +3,6 @@
 .npmignore
 .gitignore
 .commitlintrc.yml
+.github
+CODEOWNERS
+.snyk
