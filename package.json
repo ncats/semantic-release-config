@@ -36,7 +36,7 @@
     "@semantic-release/github": "^5.4.3",
     "@semantic-release/npm": "^5.1.15",
     "@semantic-release/release-notes-generator": "^7.3.0",
-    "snyk": "^1.722.0"
+    "snyk": "^1.947.0"
   },
   "release": {
     "extends": "./index.js"
