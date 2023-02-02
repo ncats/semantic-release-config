@@ -34,7 +34,7 @@
     "@semantic-release/exec": "^3.3.6",
     "@semantic-release/git": "^7.0.10",
     "@semantic-release/github": "^5.4.3",
-    "@semantic-release/npm": "^5.1.15",
+    "@semantic-release/npm": "^9.0.2",
     "@semantic-release/release-notes-generator": "^7.3.0",
     "snyk": "^1.722.0"
   },
@@ -45,7 +45,7 @@
     "@commitlint/cli": "^7.0.0",
     "@commitlint/config-conventional": "^7.0.1",
     "husky": "^0.14.3",
-    "semantic-release": "^15.14.0"
+    "semantic-release": "^20.1.0"
   },
   "snyk": true
 }
