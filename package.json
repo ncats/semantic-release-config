@@ -45,7 +45,7 @@
     "@commitlint/cli": "^7.0.0",
     "@commitlint/config-conventional": "^7.0.1",
     "husky": "^0.14.3",
-    "semantic-release": "^15.14.0"
+    "semantic-release": "^21.0.1"
   },
   "snyk": true
 }
